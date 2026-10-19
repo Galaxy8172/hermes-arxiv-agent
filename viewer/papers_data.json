@@ -1,10 +1,24 @@
 {
-  "count": 692,
+  "count": 693,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-17",
+  "crawled_date_max": "2026-10-19",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.22621",
+      "title": "Noise-shaped Sampling and Annealing for Scalable On-the-edge Training of Binary and Ternary AI Models",
+      "authors": "Zihao Chen, Zhili Xiao, Rui-Jie Zhu, Yipeng Wang, Jason Eshraghian, Shantanu Chakrabartty",
+      "affiliations": "Department of Electrical and Systems Engineering, Washington University in St. Louis; Department of Electrical and Computer Engineering, University of California, Santa Cruz; Department of Computer Science and Engineering, Washington University in St. Louis",
+      "published_date": "2026-10-15",
+      "categories": "cs.LG",
+      "abstract": "The training loss of binary and ternary neural networks, expanded as a multilinear polynomial over the discrete weights, is structurally equivalent to the energy of a hierarchical high-order Ising model. We exploit this equivalence to apply Ising solvers to discrete-weight network training, while accounting for a fundamental difference in objectives: an Ising solver seeks the ground state of a fixed energy function, whereas training seeks solutions that generalize to unseen data. Our key contribution is $ΣΔ$-Sampler, an optimizer that reconciles these objectives by embedding a stochastic sampling-and-annealing step as a noisy quantizer inside a first-order $ΣΔ$ noise-shaping loop. The loop pushes noise from weight quantization, high-order frustration, and mini-batch sampling out of the low-frequency adaptation band, so that discrete weight updates follow the smooth descent trajectories embedded in the rugged loss landscape. We validate the framework on a planted quadratic unconstrained binary optimization (QUBO) benchmark with a known minimizer; on CIFAR-10, where a $13$M-parameter ternary model comes within $1\\%$ of full-precision accuracy; on ImageNet-1k, where a ternary ResNet-18 comes within $0.4\\%$ Top-5 accuracy of a ternary baseline; on class-incremental continual learning, where prior-task accuracy is preserved; and on MatMul-free language models up to $2.7$B parameters, where it outperforms a straight-through-estimator baseline under matched continued pre-training. Compared with standard quantization-aware training, $ΣΔ$-Sampler reduces the training memory footprint by over $50\\%$, delivers an order-of-magnitude speed-up, and reduces weight-update memory traffic by four orders of magnitude, making it attractive for on-device training and fine-tuning of large binary and ternary models.",
+      "summary_cn": "二值/三值网络训练损失可视为高阶伊辛模型能量，作者提出ΣΔ-Sampler优化器：把采样退火作为含噪量化器嵌入一阶ΣΔ噪声整形环路，将量化与采样噪声移出低频频带，使离散权重沿平滑轨迹更新。ImageNet三值ResNet-18 Top-5仅低0.4%，可扩展至2.7B无乘法模型，显存降超50%。",
+      "pdf_filename": "2610.22621.pdf",
+      "crawled_date": "2026-10-19",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.22621"
+    },
     {
       "arxiv_id": "2610.22110",
       "title": "Unfragmenting Nawatl NMT: Single-Variant Specialization for Masewalkopa",
