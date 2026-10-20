@@ -1,10 +1,38 @@
 {
-  "count": 693,
+  "count": 695,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-19",
+  "crawled_date_max": "2026-10-20",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.24343",
+      "title": "What Matters for NVFP4 Training? A Comparative Study of Low-Precision Pretraining Recipes",
+      "authors": "Anjulie Agrusa, Andrei Panferov, Elizabeth Wei, Keith Wyss, Paul Gibbons, Erik Schultheis, Jinhang Choi, Frank Sun, Tijmen Blankevoort, Dan Alistarh",
+      "affiliations": "NVIDIA; Institute of Science and Technology Austria; Red Hat AI",
+      "published_date": "2026-10-17",
+      "categories": "cs.CL, cs.AI, cs.LG",
+      "abstract": "Training large language models directly in 4-bit floating-point (FP) formats promises substantial improvements in throughput and energy efficiency. While some recipe design choices have been validated at scale, many promising approaches remain untested beyond small models and short token horizons, leaving open the question of which trends will hold. We present a systematic comparison of recent NVFP4 recipes at medium model scale, evaluating dense 8B and 30B-A3B MoE models trained for up to 1T tokens, with a focus on which ingredients are necessary for accuracy recovery. We propose a final recipe grounded in the principles behind established stable NVFP4 training at scale, incorporating state-of-the-art techniques such as unbiased gradient estimation with lower quantization error than stochastic rounding. To the best of our knowledge, this is the strongest FP4 training result demonstrated at this scale to date in loss gap to BF16. Through ablation studies, we find that: (i) each technique in the optimized recipe measurably improves loss trajectory, (ii) selective high-precision layers are necessary for recovering accuracy at scale, (iii) not all tensors in the backward pass benefit equally from de-biasing, leaving room to apply complementary error-reduction techniques to the remaining tensors.",
+      "summary_cn": "系统比较中等规模下的NVFP4低精度预训练配方，用8B稠密与30B-A3B MoE模型训练至1万亿token，考察哪些成分对精度恢复必需。最终配方采用量化误差低于随机舍入的无偏梯度估计并保留选择性高精度层，取得该规模与BF16损失差距最小的FP4结果；消融显示反向传播各张量从去偏中受益不均。",
+      "pdf_filename": "2610.24343.pdf",
+      "crawled_date": "2026-10-20",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.24343"
+    },
+    {
+      "arxiv_id": "2610.22395",
+      "title": "Not All Frames Are Equal:Difference-Aware Quantization for Ultra-Low-Bit ASR",
+      "authors": "Woori Jeon, Jungmin So",
+      "affiliations": "Sogang University, Seoul, Korea",
+      "published_date": "2026-10-14",
+      "categories": "cs.SD",
+      "abstract": "Post-training quantization (PTQ) methods such as GPTQ and AWQ compress large language models effectively, but applying them to automatic speech recognition (ASR) at ultra-low bit-widths (2-3 bits) causes severe transcription degradation. Unlike discrete text tokens, speech activations are highly correlated in steady-state and zero-padded regions yet change rapidly at phonetic boundaries; when all frames contribute equally to the Hessian, static frames dominate calibration and obscure informative transitions. We propose DiffAQ, which computes frame-to-frame activation differences to measure the rate of acoustic change and assigns Hessian importance proportionally, concentrating quantization precision on phonetically critical frames. As a training-free modification to GPTQ, DiffAQ consistently reduces WER across various Whisper sizes and standard benchmarks, with the largest gains at 2-bit precision where baseline methods frequently produce degenerate outputs.",
+      "summary_cn": "针对语音识别模型在2-3比特超低比特量化下转录严重退化的问题，提出DiffAQ：计算帧间激活差异刻画声学变化速率，按此加权Hessian重要性，将量化精度集中在音素边界等关键帧。作为GPTQ的无训练改造，在多种Whisper规模与基准上一致降低WER，2比特下增益最大。",
+      "pdf_filename": "2610.22395.pdf",
+      "crawled_date": "2026-10-20",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.22395"
+    },
     {
       "arxiv_id": "2610.22621",
       "title": "Noise-shaped Sampling and Annealing for Scalable On-the-edge Training of Binary and Ternary AI Models",
