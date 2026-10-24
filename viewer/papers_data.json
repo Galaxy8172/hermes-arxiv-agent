@@ -1,10 +1,38 @@
 {
-  "count": 706,
+  "count": 708,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-23",
+  "crawled_date_max": "2026-10-24",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.31646",
+      "title": "Low-Bit N-Gram Embeddings for Language Models",
+      "authors": "Stephen Chung, Wenyu Du",
+      "affiliations": "Dualverse AI",
+      "published_date": "2026-10-22",
+      "categories": "cs.CL, cs.AI",
+      "abstract": "Many recent open-weight language models use n-gram embedding tables to improve performance. These tables store learned representations of short token sequences, such as pairs or triples of consecutive tokens, which the model retrieves during processing. However, they can require substantial memory: DeepSeek-V4.1-Flash, for example, allocates 196 billion parameters to its Engram n-gram memory. We therefore investigate whether this memory cost can be reduced while preserving the performance improvement that the tables provide. We propose storing n-gram embeddings at low precision and systematically investigate different quantization methods and bit allocations across tables. Across nanochat-, Llama-, and GPT-2-family models trained from scratch, four-bit tables save approximately 75% of table memory while preserving more than 99% of the validation-loss improvement from adding the tables. Using fewer bits leads to a larger drop in performance, although we find that a short fine-tuning phase recovers a significant part of this loss. In addition, reinvesting the saved memory in larger tables can improve performance beyond that of the original full-precision tables while still using less memory. These table memory savings also extend to large existing models: on DeepSeek-V4.1-Flash and Qwen3.8-Flash-Next, low-bit tables save 47-55% of table memory, with perplexity increases of less than 1.2% and largely preserved downstream task performance. These findings establish low-bit precision as a practical way to reduce the memory requirements of n-gram embeddings and use the saved capacity to improve model performance.",
+      "summary_cn": "系统研究n-gram嵌入表的低比特存储：比较多种量化方法与比特分配，四比特表省约75%表内存保留99%以上由该表带来的验证损失改善，更少比特经短时微调可挽回大半损失；把省下内存换成更大的表可超越原全精度表。DeepSeek-V4.1-Flash等大模型上省47-55%表内存，困惑度升幅不足1.2%。",
+      "pdf_filename": "2610.31646.pdf",
+      "crawled_date": "2026-10-24",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.31646"
+    },
+    {
+      "arxiv_id": "2610.31412",
+      "title": "SQuAT: Spherical Lattice Vector Quantization-Aware Training",
+      "authors": "Sebastian Loeschcke, Ivan Koryakovskiy, Tycho F. A. van der Ouderaa, Riccardo Del Chiaro, Mart van Baalen, Paul N. Whatmough, Markus Nagel",
+      "affiliations": "University of Copenhagen; Qualcomm AI Research",
+      "published_date": "2026-10-22",
+      "categories": "cs.LG, cs.CL",
+      "abstract": "Vector quantization (VQ), in particular lattice-based methods, offer strong rate-distortion trade-offs for low-bit large language models (LLMs), yet their behavior under quantization-aware training (VQ-QAT) remains poorly understood. We scale lattice VQ-QAT to billion-parameter LLMs and multi-billion-token training regimes, and introduce SQuAT, a shape-gain VQ-QAT approach trained with a separate straight-through estimator (STE) for the shape and gain. SQuAT decomposes weights into direction and magnitude: normalized directions are quantized using an $E_8$-derived spherical codebook, while gains are quantized independently with low-bit scalar quantizers. We show that, unlike a standard STE applied to the full quantizer, which ignores the shape-gain structure, these separate STEs induce tangent-space updates for directions, yielding an implicit form of spherical (Riemannian) optimization. To enable scalability, we develop a distributed exact nearest-neighbor assignment scheme, in which workers quantize disjoint weight blocks and communicate only discrete indices, reducing VQ-QAT training time by 12.8$\\times$ and allowing us to scale it to 10B tokens. Across instruction-tuned LLaMA-3.2-1B/3B, Qwen3-4B, and base Qwen3-1.7B, SQuAT consistently outperforms standard VQ-QAT STE under identical quantizers and initialization, and achieves SOTA VQ-QAT accuracy.",
+      "summary_cn": "SQuAT把格矢量量化感知训练扩展到十亿参数LLM：权重分解为方向与增益，方向用E8球形码本、增益用低比特标量量化，并分别设计直通估计器使方向更新落在切空间，隐含球面黎曼优化；分布式精确最近邻分配令训练提速12.8倍、可扩至百亿token，在LLaMA-3.2与Qwen3上精度超越标准VQ-QAT。",
+      "pdf_filename": "2610.31412.pdf",
+      "crawled_date": "2026-10-24",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.31412"
+    },
     {
       "arxiv_id": "2610.30779",
       "title": "ProQuant: Preserving Expert Quality over Quantity in Ultra-Low-Bit Quantization of Mixture-of-Experts Models",
