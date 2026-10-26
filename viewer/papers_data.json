@@ -1,10 +1,38 @@
 {
-  "count": 708,
+  "count": 710,
   "crawled_date_min": "2026-04-15",
-  "crawled_date_max": "2026-10-24",
+  "crawled_date_max": "2026-10-26",
   "published_date_min": "2026-01-16",
   "published_date_max": "2026/06/03",
   "papers": [
+    {
+      "arxiv_id": "2610.32465",
+      "title": "Sharpness-aware Orthogonalized Momentum Algorithms",
+      "authors": "Geetika, Shivani Singh Chauhan, Gauranshi Gupta, Anant Jain, Kaushik Kalyanaraman, Bapi Chatterjee",
+      "affiliations": "Department of Computer Science and Engineering, Indraprastha Institute of Information Technology, Delhi, India; Department of Mathematics, Indraprastha Institute of Information Technology, Delhi, India",
+      "published_date": "2026-10-23",
+      "categories": "cs.LG, math.OC",
+      "abstract": "Adversarial sharpness penalty per iteration of a base optimizer, known as sharpness-aware minimization (SAM), is an accepted technique to improve generalization in deep learning. Recently, Muon has emerged as a dominant optimization algorithm for training large language models (LLMs). It achieves lower sample complexity for heavy-tailed gradient updates - a phenomenon common in LLM training. However, sharpness penalties with Muon updates are yet largely unexplored in the literature. Moreover, the behavior of SAM under heavy-tailed noise is unknown both theoretically and empirically. A potential reason for this gap is the additional cost of extra gradient computation per iteration for penalty perturbations in SAM, which becomes prohibitive for LLMs. This paper introduces Sharpness-aware Orthogonalized Momentum Algorithm (SOMA) to combine a computationally efficient and theoretically grounded perturbation scheme with the Muon algorithm. The key idea is to use stale (purely) stochastic gradient noise for adversarial perturbations. Theoretically, we show that SOMA's sample complexity is invariant to the perturbation direction. We provide explorations and insights into SOMA's robustness to heavy-tailed gradient noise. We extensively explore SOMA's efficacy in (a) mitigating quality degradation due to post-training quantization, and (b) catastrophic forgetting during fine-tuning of LLMs.",
+      "summary_cn": "论文提出锐度感知正交化动量算法SOMA，将计算高效且有理论保证的扰动方案与Muon结合，用陈旧随机梯度噪声构造对抗扰动，免去SAM每步额外的梯度计算开销。理论上证明其样本复杂度与扰动方向无关，并分析重尾噪声下的鲁棒性；实验显示可缓解后训练量化的精度下降并抑制LLM微调中的灾难性遗忘。",
+      "pdf_filename": "2610.32465.pdf",
+      "crawled_date": "2026-10-26",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.32465"
+    },
+    {
+      "arxiv_id": "2610.32417",
+      "title": "Measuring the Energy Cost of Completing Tasks with Quantized Language-Model Agents",
+      "authors": "Stephen Abkin, Aldric Yang, Alex Flesher, Nitheesh Kodarapu, Deepak Panigrahy, Aakash Tyagi, David Kebo Houngninou",
+      "affiliations": "Texas A&M University",
+      "published_date": "2026-10-23",
+      "categories": "cs.PF",
+      "abstract": "Quantization reduces the memory and energy needed to serve large language models (LLMs) and AI agents for coding and data analysis can now run on locally hosted LLMs. In practice, this benefit is commonly benchmarked per output token. Yet an agent calls its model repeatedly, runs tools, and revises its work, and quantization can change both how much the agent generates and whether it succeeds. Existing energy studies either compare quantized models on single requests or measure agents at one fixed precision, overlooking how a change in precision plays out across a complete agent task.   To address this gap, this paper presents the first characterization of the task-level energy trade-offs of model quantization in locally hosted agents. We develop 29 agent tasks with automatic pass/fail checks in six families, ranging from single-answer SQL analytics to multi-step repository bug fixing, and measure CPU and GPU energy per output token and per completed task for 4-bit and 8-bit versions of two open-weight models on bare-metal NVIDIA A100 nodes with llama.cpp.   Our findings reveal that 4-bit precision generally saves energy per token, though whether it saves energy per completed task is task dependent and changes with the model and the execution budget (i.e., limits on turns, tokens, and time). We trace this discrepancy to the extra tokens needed to complete a task in full, which translates into using up to 3.5 times as much energy per completed task. These findings offer actionable guidance for developers and operators choosing model precision for agents, showing how tokens per completed task, set against the per-token saving, reveal whether lower precision completes the work with less energy.",
+      "summary_cn": "首次从任务级刻画本地LLM智能体的量化能耗：构建六大类29个带自动判定的任务，在A100上用llama.cpp测量两款开源模型4-bit与8-bit的每token及每任务能耗。4-bit通常降低每token能耗，但每任务是否更省取决于任务、模型与预算，因低精度需更多token，能耗最高反增3.5倍。",
+      "pdf_filename": "2610.32417.pdf",
+      "crawled_date": "2026-10-26",
+      "notes": "",
+      "pdf_url": "https://arxiv.org/pdf/2610.32417"
+    },
     {
       "arxiv_id": "2610.31646",
       "title": "Low-Bit N-Gram Embeddings for Language Models",
