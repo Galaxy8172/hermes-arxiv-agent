@@ -30,7 +30,8 @@ OUTPUT_JSON = DATA_DIR / "new_papers.json"   # 输出给 hermes agent 的中间�
 
 # arxiv API 配置
 ARXIV_API = "https://export.arxiv.org/api/query"
-MAX_RESULTS = 50
+MAX_RESULTS = 120  # 7 方向合并查询，日产量 >50，避免截断漏论文
+DOWNLOAD_PDFS = False  # 本地不下载 PDF（单位改由 OpenAlex 回填）
 REQUEST_INTERVAL = 3  # 秒
 
 # ==================== 工具函数 ====================
@@ -158,25 +159,27 @@ def download_pdf(paper: dict) -> bool:
     if pdf_path.exists():
         print(f"[INFO] PDF exists: {paper['pdf_filename']}")
         return True
-    try:
-        response = requests.get(paper["pdf_url"], timeout=(15, 45), stream=True)
-        response.raise_for_status()
-        import time as _t
-        _t0 = _t.time()
-        with open(pdf_path, "wb") as f:
-            for chunk in response.iter_content(chunk_size=8192):
-                f.write(chunk)
-                if _t.time() - _t0 > 180:  # 整文件 180s 上限，防慢速滴流连接
-                    raise TimeoutError("total download time exceeded 180s")
-        print(f"[INFO] Downloaded: {paper['pdf_filename']}")
-        return True
-    except Exception as e:
+    import time as _t
+    for attempt in range(1, 3):
         try:
-            pdf_path.unlink()  # 清掉半截文件，下轮重下
-        except OSError:
-            pass
-        print(f"[ERROR] Download failed {paper['pdf_url']}: {e}")
-        return False
+            response = requests.get(paper["pdf_url"], timeout=(15, 45), stream=True)
+            response.raise_for_status()
+            _t0 = _t.time()
+            with open(pdf_path, "wb") as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+                    if _t.time() - _t0 > 420:  # 单篇 420s 上限（慢速链路下大 PDF 需要）
+                        raise TimeoutError("total download time exceeded 420s")
+            print(f"[INFO] Downloaded: {paper['pdf_filename']}", flush=True)
+            return True
+        except Exception as e:
+            try:
+                pdf_path.unlink()  # 清掉半截文件
+            except OSError:
+                pass
+            print(f"[ERROR] Download failed (attempt {attempt}) {paper['pdf_url']}: {e}", flush=True)
+            _t.sleep(2)
+    return False
 
 
 def load_or_create_excel() -> openpyxl.Workbook:
@@ -437,7 +440,8 @@ def load_incomplete_papers_from_excel() -> dict[str, dict]:
         arxiv_id = paper["arxiv_id"]
         if not arxiv_id:
             continue
-        if paper["affiliations"] and paper["summary_cn"]:
+        # 只以 summary_cn 判定补全完成；affiliations 缺失走 OpenAlex 回填，不阻塞发布
+        if paper["summary_cn"]:
             continue
         paper["summary"] = paper["abstract"]
         paper["pdf_url"] = f"https://arxiv.org/pdf/{arxiv_id}"
@@ -526,11 +530,11 @@ def main():
     print(f"[INFO] {len(new_papers)} NEW papers")
 
     # 下载 PDF + 更新 ID
-    downloaded = []
-    for paper in new_papers:
-        ok = download_pdf(paper)
-        downloaded.append({**paper, "pdf_downloaded": ok})
-        time.sleep(REQUEST_INTERVAL)
+    # 本地不再下载 PDF：小程序详情页按 pdf_url 在线打开。
+    # 如需恢复本地 PDF（供 PDF 提取单位），把 DOWNLOAD_PDFS 改回 True。
+    downloaded = [{**paper, "pdf_downloaded": False} for paper in new_papers]
+    if new_papers:
+        print(f"[INFO] Skip PDF download (DOWNLOAD_PDFS=False), {len(new_papers)} papers metadata only")
 
     if downloaded:
         # 保存 Excel（summary_cn 和 affiliations 暂留空，等 LLM 填入）
