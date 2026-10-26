@@ -19,13 +19,14 @@ from openpyxl.styles import Font, PatternFill, Alignment
 
 # ==================== 配置区 ====================
 BASE_DIR = Path(__file__).resolve().parent
-PAPERS_DIR = BASE_DIR / "papers"
-EXCEL_FILE = BASE_DIR / "papers_record.xlsx"
+DATA_DIR = BASE_DIR.parent / "data"
+PAPERS_DIR = DATA_DIR / "papers"
+EXCEL_FILE = DATA_DIR / "papers_record.xlsx"
 VIEWER_JSON = BASE_DIR / "viewer" / "papers_data.json"
-CRAWLED_IDS_FILE = BASE_DIR / "crawled_ids.txt"
-PENDING_LLM_IDS_FILE = BASE_DIR / "pending_llm_ids.txt"
+CRAWLED_IDS_FILE = DATA_DIR / "crawled_ids.txt"
+PENDING_LLM_IDS_FILE = DATA_DIR / "pending_llm_ids.txt"
 KEYWORDS_FILE = BASE_DIR / "search_keywords.txt"
-OUTPUT_JSON = BASE_DIR / "new_papers.json"   # 输出给 hermes agent 的中间文件
+OUTPUT_JSON = DATA_DIR / "new_papers.json"   # 输出给 hermes agent 的中间文件
 
 # arxiv API 配置
 ARXIV_API = "https://export.arxiv.org/api/query"

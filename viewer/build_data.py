@@ -14,7 +14,8 @@ from pathlib import Path
 from openpyxl import load_workbook
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-EXCEL_PATH = BASE_DIR / "papers_record.xlsx"
+DATA_DIR = BASE_DIR.parent / "data"
+EXCEL_PATH = DATA_DIR / "papers_record.xlsx"
 OUTPUT_PATH = Path(__file__).resolve().parent / "papers_data.json"
 
 

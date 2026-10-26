@@ -42,7 +42,7 @@ def main() -> int:
         print("[WARN] 补全未全部完成，本轮不发布（下轮自动续做）", flush=True)
         return 0
 
-    pending = BASE_DIR / "pending_llm_ids.txt"
+    pending = BASE_DIR.parent / "data" / "pending_llm_ids.txt"
     if pending.exists() and pending.read_text(encoding="utf-8").strip():
         print("[WARN] 仍有待补全论文，跳过发布（与上游 publish 门禁一致）", flush=True)
         return 0

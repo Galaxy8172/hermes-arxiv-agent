@@ -30,10 +30,11 @@ from openpyxl import load_workbook
 import pdfplumber
 
 BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR.parent / "data"
 CONFIG_PATH = BASE_DIR.parent / "pipeline_config.json"
-EXCEL_PATH = BASE_DIR / "papers_record.xlsx"
-PAPERS_DIR = BASE_DIR / "papers"
-MERGED_PATH = BASE_DIR / "merged_llm_results.json"
+EXCEL_PATH = DATA_DIR / "papers_record.xlsx"
+PAPERS_DIR = DATA_DIR / "papers"
+MERGED_PATH = DATA_DIR / "merged_llm_results.json"
 MONITOR = BASE_DIR / "monitor.py"
 
 PDF_MAX_CHARS = 6000
