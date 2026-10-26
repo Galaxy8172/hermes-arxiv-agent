@@ -74,6 +74,12 @@ def load_rows() -> list[dict]:
 
     rows = list(rows_by_id.values())
 
+    # 滑动窗口：只保留最近 30 天收录的论文，控制 papers_data.json 体积
+    # （老论文仍留在 Excel 里，build 时剔除但可追溯）
+    from datetime import datetime, timedelta
+    cutoff = (datetime.now() - timedelta(days=30)).strftime("%Y-%m-%d")
+    rows = [p for p in rows if p["crawled_date"] >= cutoff]
+
     rows.sort(key=lambda x: (x["crawled_date"], x["published_date"], x["arxiv_id"]), reverse=True)
     return rows
 
