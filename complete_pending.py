@@ -210,9 +210,9 @@ def main() -> None:
         print(f"[{i}/{len(todo)}] {arxiv_id} | {paper['title'][:60]}")
         pdf = pdf_text(arxiv_id)
         if not pdf and not (PAPERS_DIR / f"{arxiv_id}.pdf").exists():
-            print("    [SKIP] 本地无 PDF（等下一轮 monitor 下载后再补）")
-            failed.append(arxiv_id)
-            continue
+            # PDF 永久缺失（下载失败/损坏）：不再跳过——否则该论文永远 pending，卡死发布门禁。
+            # 改用摘要兜底生成 summary_cn，单位标注"未找到单位信息"。
+            print("    [INFO] 本地无 PDF，用摘要兜底补全")
         res = None
         for attempt in range(1, RETRIES + 1):
             try:
@@ -247,8 +247,8 @@ def main() -> None:
         print(f"[SAVE] 已写回 Excel {n} 条")
 
     sync_pending()
-    print(f"[DONE] {datetime.now().isoformat()} 成功 {len(done)} / 失败 {len(failed)}"
-          + (f"（失败: {', '.join(failed[:5])}{'…' if len(failed) > 5 else ''}）" if failed else "")))
+    tail_msg = ('（失败: ' + ', '.join(failed[:5]) + ('…' if len(failed) > 5 else '') + '）') if failed else ''
+    print(f"[DONE] {datetime.now().isoformat()} 成功 {len(done)} / 失败 {len(failed)}" + tail_msg)
 
 
 if __name__ == "__main__":
