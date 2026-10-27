@@ -1,5 +1,5 @@
 {
-  "count": 120,
+  "count": 108,
   "crawled_date_min": "2026-10-27",
   "crawled_date_max": "2026-10-27",
   "published_date_min": "2026-10-09",
@@ -426,20 +426,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.27275"
     },
     {
-      "arxiv_id": "2610.27240",
-      "title": "Nanoscale chemical engineering of Ti3C2Tx MXene multilayers through in situ electron beam irradiation in a TEM",
-      "authors": "Ayoub Benmoumen, Marie-Laure David, Noé Condé, Eric Gautron, Sophie Morisset, Stéphane Célérier, Anupma Thakur, Babak Anasori, Vincent Mauchamp, Philippe Moreau",
-      "affiliations": "",
-      "published_date": "2026-10-19",
-      "categories": "cond-mat.mtrl-sci",
-      "abstract": "Defect engineering in low-dimensional materials is a powerful approach to tailor their structure and chemistry at the atomic scale, with high relevance for tuning physical properties. Here, we apply this strategy to MXenes, one of the largest families of two-dimensional (2D) materials, and demonstrate the use of a highly focused scanning transmission electron microscope (STEM) beam for the structural and chemical nanoengineering of titanium carbide (Ti3C2Tx) multilayers. By adjusting the beam energy, electron dose, and scanning parameters, Ti3C2Tx multilayers were irradiated at 80 and 300 keV and characterized in situ using annular dark-field imaging and electron energy-loss spectroscopy (EELS). The irradiation induces gradual structural and chemical modifications, largely driven by the selective sputtering of atomic species and MXene layers. We identify irradiation conditions that selectively remove Cl or F surface terminations while largely preserving the Ti3C2 framework, whereas other conditions promote preferential carbon removal, in agreement with theoretical predictions. Most notably, electron irradiation drives the migration and accumulation of initially dilute nitrogen impurities within the irradiated regions, leading to the formation of nitrogen-rich titanium carbonitride (Ti3CyNzTx) nanodomains embedded in the Ti3C2Tx multilayers. These laterally patterned carbide/carbonitride architectures constitute in-plane MXene heterostructures with nanometer-scale spatial control. These results demonstrate that electron irradiation can be used to locally tailor MXene composition and create nanoscale architectures beyond those accessible through conventional chemical synthesis.",
-      "summary_cn": "针对二维MXene材料原子尺度结构与化学调控的需求，利用透射电镜中高度聚焦的扫描透射电子束对Ti3C2Tx多层进行原位纳米加工。通过在80和300 keV下调节束流能量、剂量与扫描参数，结合环形暗场成像与电子能量损失谱表征，发现辐照引发的选择性溅射可在保留Ti3C2骨架的前提下选择性去除Cl或F表面端基，其他条件下则优先去除碳，与理论预测一致。此外，电子辐照还驱动原本稀散的氮杂质迁移并富集，实现了MXene的纳米尺度化学工程调控。",
-      "pdf_filename": "2610.27240.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.27240"
-    },
-    {
       "arxiv_id": "2610.26837",
       "title": "SpecKCast: Spectral Kalman Forecasting for Diffusion Acceleration",
       "authors": "Javad Rajabi, Hakki Can Karaimer, David B. Lindell, Babak Taati, Michael S. Brown",
@@ -480,20 +466,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.26455"
-    },
-    {
-      "arxiv_id": "2610.26450",
-      "title": "On True Minimum Distances of Goppa Codes",
-      "authors": "Yaqi Chen, Hao Chen, Chao Liu, Huimin Lao",
-      "affiliations": "",
-      "published_date": "2026-10-19",
-      "categories": "cs.IT",
-      "abstract": "Binary Goppa codes are important in coding theory and cryptography. It is well-known that the minimum distance of a binary Goppa code defined by a squarefree polynomial of degree $r$ is at least $2r+1$. Though from the classical results of C. J. Moreno, O. Moreno, F. Levy-dit-Vehel and S. Litsyn that the true minimum distances of binary Goppa codes are $2r+1$, when the extension field degree $m$ is larger than $(r-1)^{4r}$. There have only very few families of binary Goppa codes with determined true minimum distances.   In this paper, we give necessary and sufficient conditions for binary Goppa codes such that their minimum distances are $2r+1$ and $2r+2$. Infinitely many infinite families of binary Goppa codes with minimum distance $2r+1$ are given. In particular, we construct such codes for every Goppa degree $r$ in the range $2^{h-1}<r<2^h$ over $\\mathbb F_{2^{2h}}$. For every $2\\le r\\le\\lfloor2^m/3\\rfloor$, we also obtain at least $2^m-3r+1$ distinct monic squarefree Goppa polynomials of degree $r$ over $\\mathbb F_{2^m}$, such that their related binary Goppa codes have minimum distance $2r+1$. We extend a criterion for $q$-ary Goppa codes to split auxiliary polynomials and obtain some infinite families of $q$-ary Goppa codes attaining their designed distances $r+1$. We also construct infinite families of binary Goppa codes with minimum distance exactly $2r+2$.",
-      "summary_cn": "围绕二元 Goppa 码真实最小距离难确定、仅当 m>(r-1)^{4r} 已知等于 2r+1 的问题，给出距离为 2r+1 与 2r+2 的充要条件，并把 q 元判据推广到可裂辅助多项式；构造无穷多族距离 2r+1 的码，覆盖 2^{h-1}<r<2^h 的 F_{2^{2h}} 情形，且对 2≤r≤⌊2^m/3⌋ 至少给出 2^m-3r+1 个首一无平方因子 Goppa 多项式。",
-      "pdf_filename": "2610.26450.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.26450"
     },
     {
       "arxiv_id": "2610.26262",
@@ -622,20 +594,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.24814"
     },
     {
-      "arxiv_id": "2610.24776",
-      "title": "Mid-infrared Imaging of SR 12 c with JWST/MIRI: Grain Growth in an Evolved Circumplanetary Disk",
-      "authors": "Ya-Lin Wu, Claire O. Finley, Brendan P. Bowler, Ning Chen, Yuhiko Aoyama, Gregory J. Herczeg, Catherine C. Espaillat, William Best, Ian Czekala, Katherine B. Follette, Adam L. Kraus, Raquel A. Martinez, Connor E. Robinson, Quang H. Tran, Kimberly Ward-Duong, Yifan Zhou",
-      "affiliations": "",
-      "published_date": "2026-10-17",
-      "categories": "astro-ph.EP",
-      "abstract": "The physical properties of circumplanetary disks offer insights into the formation of giant planets and their satellites. The circumbinary planetary-mass companion SR 12 c (1200 au from SR 12 AB) hosts an isolated dust disk directly detected with ALMA. We present JWST/MIRI imaging of SR 12 c from 5.6 to 21 $μ$m and analyze its spectral energy distribution from infrared to submillimeter wavelengths. Phenomenologically, the dust disk can be described by a two-component blackbody with large contrasts in characteristic temperatures and radii. Physically motivated models with varied geometries and heating mechanisms suggest a predominantly flat, irradiation-heated disk with a smaller contribution from viscous dissipation. The disk is inferred to be compact, with an inner radius of ~3 $R_{\\rm Jup}$. The outer radius is only loosely constrained, with a characteristic value of ~3 au. The lack of strong 10 $μ$m excess emission suggests significant grain growth and dust settling. We also find that SR 12 c is broadly consistent with the empirical star-disk scaling relations, providing context for its possible formation pathway. These results demonstrate the power of combining mid-infrared and submillimeter observations with disk modeling to better understand the physical properties of circumplanetary disks.",
-      "summary_cn": "环绕行星质量天体SR 12 c的周行星盘为研究巨行星及卫星形成提供线索。利用JWST/MIRI在5.6至21微米成像，并结合红外至亚毫米波段的能谱分布分析。模型显示该盘主要为扁平、以辐射加热为主、黏性耗散贡献较小，结构紧凑，内半径约3个木星半径，外半径特征值约3天文单位。10微米处缺乏强辐射超表明尘埃颗粒显著增长并沉降。SR 12 c大体符合恒星-盘标度关系，显示结合中红外与毫米波观测研究周行星盘的威力。",
-      "pdf_filename": "2610.24776.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.24776"
-    },
-    {
       "arxiv_id": "2610.24218",
       "title": "Landmark-Free and Scale-Blind Multi-View Registration of Preoperative Liver Models to Intraoperative Surfaces",
       "authors": "Jiaming Feng, Gerardo Loza Galindo, Shahid Farid, Sharib Ali",
@@ -720,20 +678,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.23374"
     },
     {
-      "arxiv_id": "2610.23140",
-      "title": "Seeing Through the RFI Mask: DT-FISTA Inpainting of Pulsar Dynamic Spectra via Fourier Sparsity",
-      "authors": "Yuanshang Huang, Xun Shi",
-      "affiliations": "",
-      "published_date": "2026-10-16",
-      "categories": "astro-ph.IM, astro-ph.GA, astro-ph.HE",
-      "abstract": "Radio frequency interference (RFI) frequently contaminates radio observations, and excising affected samples leaves masked regions in sampled images. Replacing masked samples with zero or the mean causes spectral leakage in Fourier-domain power representations. This contamination is particularly severe for modern pulsar scintillation studies, which rely on identifying and characterizing faint parabolic scintillation arcs in secondary spectra, the 2D power spectra of dynamic spectra. Scintillation arcs probe discrete scattering screens in the interstellar medium (ISM) and constrain their physical properties. However, leakage can obscure faint arcs whose power is often $<10^{-3}$ of the dominant pulsar signal power. Wiener inpainting can mitigate this leakage, but a dense implementation requires $\\mathcal{O}(N^2)$ memory and $\\mathcal{O}(JN^2)$ time for $N$ pixels and $J$ iterations, which is computationally expensive for full-resolution spectra containing millions of pixels. We introduce the decreasing-threshold fast iterative shrinkage-thresholding algorithm (DT-FISTA). Using a sparse Fourier representation, DT-FISTA initially estimates masked intensities from the strongest Fourier components and progressively refines them with weaker components as the soft threshold decreases. Nesterov momentum extrapolation accelerates these updates. Each iteration uses 2D fast Fourier transforms (FFT) and pointwise operations, requiring $\\mathcal{O}(N\\log N)$ time and $\\mathcal{O}(N)$ memory. Tests on $300\\times300$ pixel patches from Five-hundred-meter Aperture Spherical radio Telescope (FAST) observations yield lower reconstruction errors than the dense Wiener implementation, with runtime and memory requirements reduced by factors $>10^3$. Applied to full-resolution dynamic spectra, DT-FISTA suppresses mask-induced artifacts and reveals previously obscured faint arcs, enabling efficient ISM studies.",
-      "summary_cn": "射频干扰被掩蔽后会在动态谱中留下空缺，置零或填均值会在傅里叶功率域产生频谱泄漏，掩盖功率常低于主信号10^-3量级的微弱闪烁弧，影响脉冲星闪烁研究与星际介质散射屏性质的约束。为此提出递减阈值快速迭代收缩算法DT-FISTA，利用傅里叶稀疏表示，先由最强傅里叶分量估计掩蔽处强度，再逐步降低阈值补全细节。相比内存O(N^2)、耗时O(JN^2)的维纳修复，该方法显著降低计算开销，可有效恢复数百万像素全分辨率谱中的微弱弧形结构。",
-      "pdf_filename": "2610.23140.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.23140"
-    },
-    {
       "arxiv_id": "2610.23047",
       "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
       "authors": "Bin Ma, Min Yu, Vijay Kodamalla, Jonny Liu, Da Li, Dong Li",
@@ -774,20 +718,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.22885"
-    },
-    {
-      "arxiv_id": "2610.22786",
-      "title": "MultiPASE: Shape-Aware Comparative 3D Genome Analysis",
-      "authors": "N. Nipu, G. Johnson, C. Roth, D. Rogers, S. R. Starkenburg, C. R. Steadman, G. E. Marai",
-      "affiliations": "",
-      "published_date": "2026-10-16",
-      "categories": "q-bio.QM, cs.HC",
-      "abstract": "3D genome structures reconstructed from Hi-C data provide valuable insights into chromatin organization, but comparing them across conditions and time points remains challenging because of noise, variability, and arbitrary orientation. State-of-the-art comparison approaches often rely on contact-matrix-based summaries, which do not preserve the spatial geometry of the reconstructed structures and make integration with gene expression and chromatin accessibility difficult. There is therefore a need for robust structural alignment and spatial abstraction methods that support integrated analysis across conditions and time points. We present MultiPASE, a computational pipeline for comparative analysis of reconstructed 3D genome structures represented as gene-level spatial point clouds. MultiPASE aligns point clouds into a shared coordinate frame using coarse-to-fine rigid registration with PCA-based axis disambiguation and robust ICP refinement, then summarizes spatial organization using two complementary shape abstraction methods that produce stable, nested, multi-scale representations from dense core regions to broader structural extent. Using Hi-C-derived reconstructions from viral infection experiments, we show how the approach reveals condition-dependent structural changes that are difficult to interpret from raw 3D structures alone. By integrating spatial structure with gene expression and chromatin accessibility, MultiPASE supports interactive analysis of spatial organization and gene relocation patterns. A quantitative validation, reported in the Supplementary Materials, shows that the proposed shape abstractions preserve non-convex features, remain stable across samples, and that the alignment pipeline is necessary for meaningful comparison. A usage case and a usability evaluation with eight participants demonstrate the pipeline's effectiveness for comparative structural analysis.",
-      "summary_cn": "针对Hi-C重建三维基因组在跨条件与时间点比较中受噪声、变异和任意朝向影响、接触矩阵摘要又丢失空间几何的问题，MultiPASE将结构表示为基因级点云，以PCA消歧的粗到细刚性配准和稳健ICP对齐到统一坐标系，再用两种互补形状抽象生成从致密核心到整体范围的稳定嵌套多尺度表征，便于整合基因表达与染色质可及性；摘要未给出具体数值结果。",
-      "pdf_filename": "2610.22786.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.22786"
     },
     {
       "arxiv_id": "2610.22744",
@@ -998,20 +928,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.21086"
-    },
-    {
-      "arxiv_id": "2610.23720",
-      "title": "Magnetic tunnel junctions of twisted La2/3Sr1/3MnO3 freestanding bilayers",
-      "authors": "Kota Kanda, Shiho Irie, Kodai Niitsu, Masayuki Ochi, Takumi Yamazaki, Kouta Kondou, Kohei Ueda, Takeshi Seki, Jobu Matsuno, Junichi Shiogai",
-      "affiliations": "",
-      "published_date": "2026-10-14",
-      "categories": "cond-mat.mtrl-sci, cond-mat.mes-hall, cond-mat.str-el, physics.app-ph",
-      "abstract": "Transition metal oxides (TMOs) host a variety of emergent spintronic or multiferroic functionalities owing to the intricate interplay between lattice, orbital, charge, and spin degrees of freedom. Recent advances in epitaxial lift-off and dry transfer techniques using water-soluble sacrificial layers enables stacking and twisting of freestanding membranes of such strongly correlated oxides, providing even richer physical properties and functionalities. To date, the twisted junctions of TMOs have been mainly investigated in insulators, focusing on their structural and dielectric properties. Here, we demonstrate that the twisted bilayer membranes of La2/3Sr1/3MnO3, a prototypical half-metallic ferromagnetic metal TMO, offer a magnetic tunnel junction (MTJ) with their van der Waals (vdW) gap acting as a tunnel barrier. The twisted junctions of La2/3Sr1/3MnO3 exhibit tunnelling magnetoresistance (TMR) effect with respect to relative orientation of magnetizations of top and bottom membranes. In addition, high-field magnetoresistance shows uniaxial anisotropy, which can be assigned to tunnelling anisotropic magnetoresistance (TAMR) effect reflecting rhombohedral distortion of fully-relaxed La2/3Sr1/3MnO3. The demonstration of TMR and TAMR effects suggests that spin and in-plane momentum degrees of freedom of 3d electrons are conserved across the twisted junctions of TMOs, opening a new avenue for realizing strongly correlated twistronics utilizing electron coherence through tunnelling processes.",
-      "summary_cn": "针对扭转过渡金属氧化物研究多限于绝缘体、缺乏金属性体系磁输运探索的问题，利用水溶性牺牲层的外延剥离与干转移技术，将半金属铁磁体La2/3Sr1/3MnO3自支撑薄膜堆叠成扭转双层，以其范德华间隙作为隧穿势垒构成磁性隧道结。实验观测到随上下膜磁化相对取向变化的隧穿磁电阻效应，且高场磁电阻呈现单轴各向异性，归因于反映菱方畸变的隧穿各向异性磁电阻，为强关联氧化物自旋电子器件提供了新途径。",
-      "pdf_filename": "2610.23720.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.23720"
     },
     {
       "arxiv_id": "2610.20967",
@@ -1252,20 +1168,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.18194"
     },
     {
-      "arxiv_id": "2610.18136",
-      "title": "FPGA Based Design And Implementation of Neural Network Compensators for Nanocrystalline MEMS Pressure Sensor",
-      "authors": "Somsubhra Talapatra, Sudip Ghosh, C Roy Chaudhuri, Biplab K Sikdar, Hafizur Rahaman",
-      "affiliations": "",
-      "published_date": "2026-10-13",
-      "categories": "cs.AR",
-      "abstract": "In this paper the effects of nonlinearity and temperature of nanocrystalline MEMS pressure sensor have been compensated using neural network algorithm which has been implemented on a FPGA chip. The neural network employs back propagation algorithm to train the multilayer perceptron feed forward network that causes an error reduction due to temperature upto the level of 98%. It is realized on FPGA with pipelined architecture for parallel and fast sensing operation. The pressure sensor along with the FPGA based compensation results in an intelligent sensor system capable of high speed and accurate pressure measurement which has been tested for a typical biomedical application.",
-      "summary_cn": "针对纳米晶MEMS压力传感器存在的非线性和温度漂移问题，提出基于神经网络的补偿方案并部署于FPGA芯片。方法采用反向传播算法训练多层感知机前馈网络，并利用流水线架构实现并行高速运算。实验表明，该方法可将温度引起的误差降低达98%，使传感器与FPGA补偿模块构成智能传感系统，实现高速高精度压力测量，并已在典型生物医学应用中验证有效。",
-      "pdf_filename": "2610.18136.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.18136"
-    },
-    {
       "arxiv_id": "2610.17914",
       "title": "LinMorph: Learning to Morph Weights for Efficient Video DiT Linearization",
       "authors": "Lingyi Long, Congyue Zhao, Xiaoou Li, Yanmin Qian, Tao Huang",
@@ -1306,20 +1208,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.17829"
-    },
-    {
-      "arxiv_id": "2610.17652",
-      "title": "Experimental evidence for physical alteration of fine regolith on near-Sun asteroids",
-      "authors": "Jooyeon Geem, Mikael Granvik, Georgios Tsirvoulis, Leonard Schirner, Marianna L. Kemell, Antti Penttila, Axel Hagermann, Athanasia Toliou",
-      "affiliations": "",
-      "published_date": "2026-10-13",
-      "categories": "astro-ph.EP, astro-ph.IM",
-      "abstract": "The surfaces of airless bodies evolve through processes such as (micro)meteoroid impacts and thermal fatigue, which modify physical properties such as grain size, porosity, and mineral texture. These properties provide clues to surface evolution and are necessary for interpreting telescopic observations. Near-Sun asteroids (NSAs), which reach heliocentric distances of $\\lesssim$0.2 au, are notable targets, as their surfaces are likely modified by intense solar radiation. However, experimental studies of how radiative heating modifies the physical properties of carbonaceous asteroid surfaces remain scarce compared with studies of thermally induced compositional and spectral changes. We investigate these modifications experimentally. Near-Sun conditions at heliocentric distances $0.09<r<0.19$ au are simulated using the Space and High-Irradiance Near-Sun Simulator. CM-type carbonaceous chondrite simulants are irradiated under vacuum. Brightness is monitored in situ with a video camera during heating, and morphological changes are examined using a stage microscope and a scanning electron microscope (SEM). The irradiated samples show initial darkening followed by brightening, consolidation, and morphological modifications from sub-micrometer to millimeter scales. The observed brightness modifications are more consistent with changes in the absorption properties of the sample than with variations in surface roughness. SEM imaging of the heated samples shows structures similar to those formed by sintering, which are completely absent in unheated samples. These results suggest that sintering is a likely candidate for the mechanism responsible for the observed consolidation and morphological changes. This work provides experimental evidence to help constrain the surface evolution of NSAs in general, and supports sintering as a possible mechanism proposed for (3200) Phaethon in particular.",
-      "summary_cn": "近太阳小行星表面在强太阳辐射下物理性质如何改变尚缺乏实验约束，为此利用空间与高强辐射近太阳模拟器，在真空下对CM型碳质球粒陨石模拟物施加0.09–0.19 au日心距离对应的辐照，用摄像机原位监测亮度，并以台架显微镜和扫描电镜分析形貌。样品出现先变暗后增亮并伴随固结，表明辐射加热能显著改造细粒风化层结构，为解释近太阳小行星观测与表面演化提供实验依据。",
-      "pdf_filename": "2610.17652.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.17652"
     },
     {
       "arxiv_id": "2610.17610",
@@ -1490,20 +1378,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.15922"
     },
     {
-      "arxiv_id": "2610.15901",
-      "title": "The DAWN JWST Archive: A spectroscopically-informed population study of the physical properties of galaxies at z>2",
-      "authors": "Rashmi Gottumukkala, Gabriel Brammer, Sune Toft, Mengyuan Xiao, Anna de Graaff, Pascal A. Oesch, Francesco Valentino, Katherine E. Whitaker, William M. Baker, Laia Barrufet, Rachel Bezanson, Leindert A. Boogaard, Alex J. Cameron, Olivia R. Cooper, Emma Giovinazzo, Kasper E. Heintz, Michaela Hirschmann, Kei Ito, Ivo Labbe, Minju M. Lee, Zach J. Lewis, Jorryt Matthee, Ian McConachie, Desika Narayanan, Clara L. Pollock, Sedona H. Price, David J. Setton, Marko Shuntov, Pieter van Dokkum, Bingjie Wang, Joris Witstok, Yunchong Zhang, Pengpei Zhu",
-      "affiliations": "",
-      "published_date": "2026-10-11",
-      "categories": "astro-ph.GA",
-      "abstract": "Charting the evolution of star-formation, stellar mass and dust build-up over cosmic time relies on the accurate characterisation of the stellar population properties of high redshift galaxies. We present a catalogue of spectroscopically derived physical properties for ~12,000 galaxies at z>2, with archival JWST/NIRSpec PRISM spectroscopy and JWST/NIRCam imaging from the DAWN JWST Archive. We present a custom version of the SED fitting code BAGPIPES, used to perform joint spectrophotometric modelling of PRISM spectra and broadband NIRCam photometry. In doing so, we publicly release a science-ready catalogue of the physical properties of galaxies beyond cosmic noon. We report key physical properties, such as stellar masses, star-formation rates (SFR) and timescales, and V-band dust attenuation (Av). We further probe the recent star-formation histories (SFH) of galaxies via their SFRs on 3 Myr, 10 Myr, and 100 Myr timescales, capturing both rising and falling recent SFHs. Through dust-corrected ugi colour-colour diagrams of massive galaxies, we show how quiescent and dusty galaxies populate this colour space at z>2, with galaxies experiencing a recent downturn in star-formation occupying distinct parameter space. We also study the dustiest galaxies in our sample, showing that they are preferentially more massive and strongly star-forming relative to the parent sample, residing on the high-mass end of the star-forming main-sequence. The slope of the attenuation curve has a strong dependence on Av, varying from steep to shallow as the dust attenuation increases and the specific star-formation rate decreases. Our findings show that the unparalleled number statistics of this catalogue of spectroscopically derived stellar population properties uniquely enables the study star-formation, quenching and dust properties of galaxies from cosmic noon to cosmic dawn.",
-      "summary_cn": "准确刻画高红移星系的恒星族群性质是研究恒星形成、质量与尘埃累积演化的关键。基于DAWN JWST档案中的NIRSpec PRISM光谱与NIRCam测光数据，利用定制版BAGPIPES代码对约12000个z>2星系进行光谱与测光联合SED拟合，公开发布了包含恒星质量、恒星形成率及V波段尘埃消光Av等物理参数的科学目录，并通过3、10、100百万年时标的恒星形成率重建近期恒星形成历史，借助尘埃改正的ugi双色图揭示了z>2处宁静与尘埃遮蔽星系的分布特征。",
-      "pdf_filename": "2610.15901.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.15901"
-    },
-    {
       "arxiv_id": "2610.15339",
       "title": "MultiFlow: Vision-Driven Multimodal fMRI Encoding via Stimulus-Informed Source Flow Matching",
       "authors": "Bui Van Hung, Hoang-Son Vo, Mai Duc Minh Huy, Dang Thanh Vu, Soo-Hyung Kim",
@@ -1532,20 +1406,6 @@
       "pdf_url": "https://arxiv.org/pdf/2610.15287"
     },
     {
-      "arxiv_id": "2610.14908",
-      "title": "Pressure-Driven Evolution of the Physical Properties of Layered Y2GaB and Y2InB MAB Phases: A Comparative First-Principles Study",
-      "authors": "M. Rabi Us Sani Shapon, Md. Asif Afzal, Jubair Hossan Abir, Raihana Shams Islam, Saleh Hasan Naqib",
-      "affiliations": "",
-      "published_date": "2026-10-10",
-      "categories": "cond-mat.mtrl-sci",
-      "abstract": "MAB phases are nanolaminated ternary borides in which strong in-plane M-B bonds and weaker interlayer interactions drive their distinctive stability and functionality. Hydrostatic pressure offers a direct route to tune the in-plane and interlayer interactions that govern the stability and functionality of layered Y2GaB and Y2InB borides. Here, first-principles calculations are used to compare their structural, elastic, thermophysical, electronic, bonding, optical, and vibrational responses from 0 to 20 GPa. Elastic criteria show that Y2GaB is stable at 0, 5, and 10 GPa, whereas Y2InB is stable only at ambient pressure. Within the stable Y2GaB range, compression increases the elastic moduli, acoustic velocities, Debye temperature, and lattice thermal conductivity while reducing the elastic anisotropy. Both compounds are multiband metals and spin-orbit coupling modifies local dispersions without opening a gap. Y2GaB retains nine Fermi-surface sheets from 0 to 10 GPa, whereas Y2InB has eight at ambient pressure, with no pressure-induced topological reconstruction. Charge-density and overlap analyses indicate mixed ionic-covalent Y-B bonding within a delocalized metallic background. Optical parameters are anisotropic. Unit-cell phonon spectra contain positive frequencies at 0 and 10 GPa, although expanded-supercell calculations reveal low-frequency sensitivity. These results establish mechanically viable pressure windows and clarify substitution-driven structure-property relationships for these borides.",
-      "summary_cn": "针对层状三元硼化物Y2GaB和Y2InB，采用第一性原理计算比较其在0至20 GPa静水压力下的结构、弹性、热学、电子与光学性质。结果表明Y2GaB在0、5、10 GPa下力学稳定，而Y2InB仅在常压下稳定；压力使Y2GaB的弹性模量、声速、德拜温度和晶格热导率升高，弹性各向异性降低。两者均为多能带金属，Y2GaB保持九个费米面、Y2InB为八个，且无压力诱导的拓扑重构，Y-B键呈离子-共价混合特征。",
-      "pdf_filename": "2610.14908.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.14908"
-    },
-    {
       "arxiv_id": "2610.14848",
       "title": "Learning Dynamic Grasping",
       "authors": "Nga Kiu Kelly Ho, Yilin Liu, Hao Xu, Niloy J. Mitra",
@@ -1558,20 +1418,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.14848"
-    },
-    {
-      "arxiv_id": "2610.14694",
-      "title": "VoTSpeech: Decoupling Voice Design from Speech Generation in Instruction-Following TTS",
-      "authors": "Wenbing Yang, Qihang Lu, Zihan Sun, Peilei Jia, Yingming Gao, Ya Li, Jun Gao",
-      "affiliations": "",
-      "published_date": "2026-10-10",
-      "categories": "cs.SD, cs.CL",
-      "abstract": "Instruction-following text-to-speech (TTS) typically leaves voice design implicit, as conventional speaker embeddings encode reference audio rather than text-driven targets. We propose VoTSpeech, which decouples voice design from speech generation via an explicit intermediate voice latent. Built on a shared language model backbone, VoTSpeech first predicts a continuous voice latent from text instructions using a flow-based module. This latent serves as a shared condition for both the language model and the Acoustic DiT, guiding autoregressive sequence modeling and acoustic latent generation, respectively, before an audio VAE decoder converts the acoustic latents into waveforms. To capture speaker identity and complementary acoustic nuances, the voice latent is jointly supervised by speaker embeddings and temporally pooled audio VAE features. With task-specific adaptation, VoTSpeech performs strongly on InstructTTSEval-ZH, demonstrating competitive capabilities against strong open-source models while maintaining high naturalness. These results confirm that explicit voice latent design and its conditioning interface effectively empower text-driven voice design for controllable speech synthesis. Code, model, and audio samples are available at https://github.com/ywbn/VoTSpeech .",
-      "summary_cn": "针对指令跟随式语音合成中音色设计隐式、难以由文本精确控制的问题，提出VoTSpeech，通过显式的中间音色潜变量将音色设计与语音生成解耦：基于共享语言模型主干，先用流模型从文本指令预测连续音色潜变量，再作为共同条件分别引导自回归序列建模与声学DiT生成，最后经音频VAE解码为波形，音色潜变量由说话人嵌入和时域池化音频特征联合监督。在InstructTTSEval-ZH上表现优异，与开源强模型相当且保持高自然度。",
-      "pdf_filename": "2610.14694.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.14694"
     },
     {
       "arxiv_id": "2610.14693",
@@ -1656,20 +1502,6 @@
       "crawled_date": "2026-10-27",
       "notes": "",
       "pdf_url": "https://arxiv.org/pdf/2610.13929"
-    },
-    {
-      "arxiv_id": "2610.13920",
-      "title": "A Comprehensive JWST Slitless Spectroscopic Census of $\\sim$12,000 Emission-Line Galaxies at Redshift $0\\sim9$ in COSMOS",
-      "authors": "Shuqi Fu, Zijian Zhang, Danyang Jiang, Jie Chen, Linhua Jiang, Chenxi Bao, Yihe Wang, Ronaldo Laishram",
-      "affiliations": "",
-      "published_date": "2026-10-09",
-      "categories": "astro-ph.GA",
-      "abstract": "Emission-line galaxies provide key diagnostics of star formation, chemical enrichment, and AGN activity across cosmic time. We present a systematic census of emission-line sources using JWST/NIRCam wide-field slitless spectroscopy (WFSS) from the COSMOS-3D program, which covers a large contiguous area of 0.33 deg$^2$ and provides F444W grism spectroscopy over $3.9$--$5.1\\ μ$m. By combining slitless spectroscopy with deep multi-band imaging data, we construct a homogeneous spectroscopic sample of 12,275 objects at redshift 0--9. The typical $3σ$ line-flux limit reaches $3.2\\times10^{-18}\\ {\\rm erg\\ s^{-1}\\ cm^{-2}}$. To address source confusion inherent to slitless spectroscopy, we develop a multi-step identification framework that combines information from spectra, images, spectral energy distributions, and spatial distributions. We introduce convolutional neural network and large language model to emulate the human identification process and improve efficiency. The resulting catalog provides spectroscopic redshifts, emission-line measurements, and derived physical properties for all sources. The F444W WFSS enables the detection of multiple emission lines, including primarily [O III], H$α$, He I $\\lambda10830$, [S III] $λ\\lambda9531,9069$, Pa$β$, Pa$α$, Br$β$, PAH, Br$α$, allowing a continuous census of galaxies across cosmic time. We construct composite spectra in several redshift bins and detect a variety of faint spectral features that are difficult to identify in individual spectra, including higher-order hydrogen recombination lines, CO absorption bands, and [Fe II] lines. This catalog provides a key reference dataset for studies of galaxy evolution and AGN activity, and demonstrates the power of WFSS for constructing large, unbiased spectroscopic samples over wide areas. The full catalog will be publicly available online upon publication.",
-      "summary_cn": "针对发射线星系示踪恒星形成、金属增丰与活动星系核活动而大样本光谱不足、无缝光谱易混淆的问题，基于COSMOS-3D的JWST/NIRCam F444W无缝光谱（3.9–5.1微米、0.33平方度）结合深场多波段成像，用光谱—图像—能谱—空间分布的多步证认框架并引入卷积神经网络与大语言模型提效，建成红移0–9的12275个源均匀样本，典型3σ线流量限3.2×10^-18 erg s^-1 cm^-2，给出红移、发射线与物理性质星表。",
-      "pdf_filename": "2610.13920.pdf",
-      "crawled_date": "2026-10-27",
-      "notes": "",
-      "pdf_url": "https://arxiv.org/pdf/2610.13920"
     },
     {
       "arxiv_id": "2610.13740",
